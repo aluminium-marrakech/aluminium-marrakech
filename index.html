@@ -37,9 +37,10 @@
   }
   </script>
 
+  <!-- Changement vers Google Fonts Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -64,8 +65,9 @@
 
     html { scroll-behavior: smooth; }
 
+    /* Changement de la font principale vers Roboto */
     body {
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background: var(--g1);
       color: var(--text-main);
       overflow-x: hidden;
@@ -143,23 +145,8 @@
       text-decoration: none;
     }
 
-    .nav-logo-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--g4), var(--g5));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--g1);
-      box-shadow: 0 0 20px rgba(61,214,140,0.3);
-      /* REPLACE: <img src="logo.png" style="width:100%;height:100%;object-fit:contain;border-radius:10px"> */
-    }
-
     .nav-logo-text {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 22px;
       font-weight: 700;
       color: var(--text-main);
@@ -272,7 +259,7 @@
     }
 
     .hero-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Roboto', sans-serif;
       font-size: clamp(42px, 7vw, 88px);
       font-weight: 700;
       line-height: 1.05;
@@ -363,7 +350,7 @@
     }
 
     .stat-num {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 42px;
       font-weight: 700;
       color: var(--g5);
@@ -402,7 +389,7 @@
     }
 
     .section-title {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Roboto', sans-serif;
       font-size: clamp(32px, 4vw, 52px);
       font-weight: 700;
       color: var(--text-main);
@@ -486,7 +473,7 @@
     }
 
     .service-name {
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 22px;
       font-weight: 700;
       color: var(--text-main);
@@ -507,364 +494,6 @@
       letter-spacing: 1px;
       color: var(--g5);
       text-transform: uppercase;
-    }
-
-    /* ─── WHY US ─── */
-    #pourquoi {
-      display: flex;
-      align-items: center;
-      gap: 80px;
-    }
-
-    #pourquoi .container {
-      display: flex;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .why-left { flex: 1; }
-
-    .why-right {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .why-card {
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(20px);
-      border-radius: var(--radius);
-      padding: 28px 24px;
-      transition: all 0.3s;
-    }
-
-    .why-card:hover {
-      border-color: rgba(61,214,140,0.3);
-      transform: translateY(-4px);
-    }
-
-    .why-card-icon { font-size: 28px; margin-bottom: 14px; }
-
-    .why-card-title {
-      font-weight: 600;
-      font-size: 15px;
-      color: var(--text-main);
-      margin-bottom: 8px;
-    }
-
-    .why-card-text {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    .why-card.featured {
-      background: linear-gradient(135deg, rgba(39,160,85,0.2), rgba(61,214,140,0.1));
-      border-color: rgba(61,214,140,0.35);
-      grid-column: span 2;
-    }
-
-    /* ─── PROCESS ─── */
-    #process { background: rgba(13,43,26,0.4); }
-
-    .process-header { text-align: center; margin-bottom: 64px; }
-    .process-header .section-sub { margin: 0 auto; }
-
-    .process-steps {
-      display: flex;
-      gap: 0;
-      position: relative;
-    }
-
-    .process-steps::before {
-      content: '';
-      position: absolute;
-      top: 40px;
-      left: calc(12.5%);
-      right: calc(12.5%);
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--g4), var(--g5), var(--g4), transparent);
-    }
-
-    .process-step {
-      flex: 1;
-      text-align: center;
-      padding: 0 16px;
-      position: relative;
-    }
-
-    .step-num {
-      width: 80px;
-      height: 80px;
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(20px);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--g5);
-      margin: 0 auto 24px;
-      position: relative;
-      z-index: 2;
-      transition: all 0.3s;
-    }
-
-    .process-step:hover .step-num {
-      background: linear-gradient(135deg, var(--g3), var(--g4));
-      border-color: var(--g4);
-      color: #fff;
-      box-shadow: 0 0 30px rgba(39,160,85,0.4);
-      transform: scale(1.1);
-    }
-
-    .step-title {
-      font-weight: 600;
-      font-size: 15px;
-      margin-bottom: 8px;
-      color: var(--text-main);
-    }
-
-    .step-desc {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    /* ─── TESTIMONIALS ─── */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      margin-top: 60px;
-    }
-
-    .testimonial {
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(20px);
-      border-radius: var(--radius);
-      padding: 32px;
-      position: relative;
-    }
-
-    .testimonial::before {
-      content: '"';
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 80px;
-      line-height: 1;
-      color: rgba(61,214,140,0.15);
-      pointer-events: none;
-    }
-
-    .testimonial-text {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.7;
-      margin-bottom: 24px;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .author-avatar {
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--g3), var(--g4));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 16px;
-      color: #fff;
-    }
-
-    .author-name {
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .author-city {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .stars {
-      color: var(--g5);
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-
-    /* ─── CTA BAND ─── */
-    #cta-band {
-      padding: 80px 40px;
-      background: linear-gradient(135deg, rgba(20,61,38,0.9), rgba(30,92,56,0.8));
-      border-top: 1px solid var(--glass-border);
-      border-bottom: 1px solid var(--glass-border);
-      text-align: center;
-    }
-
-    .cta-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(30px, 4vw, 52px);
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-
-    .cta-sub {
-      font-size: 16px;
-      color: var(--text-muted);
-      margin-bottom: 40px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .whatsapp-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: #25D366;
-      color: #fff;
-      padding: 18px 44px;
-      border-radius: 50px;
-      font-size: 17px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s;
-      box-shadow: 0 8px 30px rgba(37,211,102,0.4);
-    }
-
-    .whatsapp-btn:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 16px 50px rgba(37,211,102,0.55);
-    }
-
-    .whatsapp-icon {
-      width: 28px;
-      height: 28px;
-    }
-
-    /* ─── CONTACT ─── */
-    #contact { padding: 100px 40px; }
-
-    .contact-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: start;
-    }
-
-    .contact-info { }
-
-    .contact-item {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 28px;
-      align-items: flex-start;
-    }
-
-    .contact-icon {
-      width: 48px;
-      height: 48px;
-      min-width: 48px;
-      background: linear-gradient(135deg, rgba(39,160,85,0.25), rgba(61,214,140,0.12));
-      border: 1px solid rgba(61,214,140,0.2);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
-
-    .contact-detail strong {
-      display: block;
-      font-size: 14px;
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-
-    .contact-detail span {
-      font-size: 14px;
-      color: var(--text-muted);
-    }
-
-    .contact-form {
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      backdrop-filter: blur(24px);
-      border-radius: var(--radius-lg);
-      padding: 40px;
-    }
-
-    .form-group { margin-bottom: 20px; }
-
-    .form-group label {
-      display: block;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-muted);
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid var(--glass-border);
-      border-radius: 12px;
-      padding: 14px 18px;
-      color: var(--text-main);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 14px;
-      outline: none;
-      transition: border-color 0.3s;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      border-color: rgba(61,214,140,0.5);
-      background: rgba(255,255,255,0.07);
-    }
-
-    .form-group select option { background: var(--g2); }
-
-    .form-group textarea { resize: vertical; min-height: 120px; }
-
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-
-    .form-submit {
-      width: 100%;
-      background: linear-gradient(135deg, var(--g3), var(--g4), var(--g5));
-      border: none;
-      color: #fff;
-      padding: 16px;
-      border-radius: 12px;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.3s;
-      font-family: 'DM Sans', sans-serif;
-    }
-
-    .form-submit:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(39,160,85,0.45);
     }
 
     /* ─── FOOTER ─── */
@@ -925,81 +554,10 @@
       color: var(--text-muted);
     }
 
-    .footer-socials {
-      display: flex;
-      gap: 12px;
-    }
-
-    .social-link {
-      width: 36px;
-      height: 36px;
-      background: var(--glass);
-      border: 1px solid var(--glass-border);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      text-decoration: none;
-      transition: all 0.3s;
-    }
-
-    .social-link:hover {
-      background: rgba(39,160,85,0.2);
-      border-color: var(--g4);
-      transform: translateY(-3px);
-    }
-
-    /* ─── FLOATING WA ─── */
-    .floating-wa {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 58px;
-      height: 58px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 8px 30px rgba(37,211,102,0.5);
-      z-index: 200;
-      transition: all 0.3s;
-      animation: floatWA 3s ease-in-out infinite;
-    }
-
-    @keyframes floatWA {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
-    }
-
-    .floating-wa:hover {
-      transform: scale(1.12);
-      box-shadow: 0 12px 40px rgba(37,211,102,0.65);
-    }
-
-    .floating-wa svg {
-      width: 30px;
-      height: 30px;
-      fill: #fff;
-    }
-
-    /* ─── RESPONSIVE ─── */
     @media (max-width: 900px) {
       nav { padding: 14px 20px; }
       .nav-links { display: none; }
       .hamburger { display: flex; }
-
-      #pourquoi .container { flex-direction: column; gap: 40px; }
-      .why-right { grid-template-columns: 1fr 1fr; }
-      .why-card.featured { grid-column: span 2; }
-
-      .process-steps { flex-direction: column; gap: 32px; }
-      .process-steps::before { display: none; }
-
-      .contact-wrapper { grid-template-columns: 1fr; }
-
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     }
 
@@ -1008,33 +566,17 @@
       #hero { padding: 100px 20px 60px; }
       .hero-stats { gap: 24px; }
       .stat-divider { display: none; }
-      .form-row { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
-      .why-right { grid-template-columns: 1fr; }
-      .why-card.featured { grid-column: span 1; }
-      .contact-form { padding: 24px 20px; }
-    }
-
-    /* ─── SCROLL REVEAL ─── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
     }
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- NAV (Avec votre Logo) -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <div class="nav-logo-icon">A</div>
-      <!-- TO REPLACE: <img src="logo.png" style="width:42px;height:42px;border-radius:12px;object-fit:contain"> -->
+      <img src="logo-source.png" alt="Logo AluPro" style="width: 42px; height: 42px; border-radius: 12px; object-fit: contain; background: linear-gradient(135deg, var(--g4), var(--g5));">
       <span class="nav-logo-text">Alu<span>Pro</span> Marrakech</span>
     </a>
     <ul class="nav-links">
@@ -1137,351 +679,54 @@
         <div class="service-card reveal">
           <div class="service-icon">🛡️</div>
           <div class="service-name">Garde-Corps</div>
-          <p class="service-desc">Garde-corps pour balcons, escaliers, terrasses. Combinaison aluminium et verre pour un rendu premium et sécurisé.</p>
-          <span class="service-tag">Sur mesure →</span>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🌿</div>
-          <div class="service-name">Volets & Stores</div>
-          <p class="service-desc">Volets roulants, volets battants, stores banne. Contrôle parfait de la lumière et protection contre la chaleur marocaine.</p>
-          <span class="service-tag">Sur mesure →</span>
-        </div>
-        <div class="service-card reveal">
-          <div class="service-icon">🏗️</div>
-          <div class="service-name">Façades & Cloisons</div>
-          <p class="service-desc">Murs rideaux, cloisons vitrées, verrières intérieures. Solutions premium pour bureaux, commerces et immobilier haut standing.</p>
+          <p class="service-desc">Garde-corps pour balcons, escaliers, terrasses. Combinaison aluminium et verre pour un résultat élégant et sécurisé.</p>
           <span class="service-tag">Sur mesure →</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section id="pourquoi">
-    <div class="container">
-      <div class="why-left reveal">
-        <span class="section-label">Pourquoi nous choisir</span>
-        <h2 class="section-title">L'Excellence Aluminium<br>au Cœur de Marrakech</h2>
-        <p class="section-sub" style="margin-bottom:32px">Nous combinons expertise technique, matériaux de qualité supérieure et service client irréprochable pour chaque projet.</p>
-        <a href="#contact" class="btn-primary">Demander un devis</a>
-      </div>
-      <div class="why-right reveal">
-        <div class="why-card featured">
-          <div class="why-card-icon">🏆</div>
-          <div class="why-card-title">+10 Ans d'Expertise à Marrakech</div>
-          <p class="why-card-text">Une décennie d'expérience au service des particuliers et professionnels de Marrakech. Nous connaissons les exigences du climat local et adaptons chaque solution en conséquence.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">📐</div>
-          <div class="why-card-title">100% Sur Mesure</div>
-          <p class="why-card-text">Chaque pièce est fabriquée selon vos dimensions et vos besoins exacts. Zéro compromis.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">⚡</div>
-          <div class="why-card-title">Délais Respectés</div>
-          <p class="why-card-text">Devis sous 48h. Fabrication et pose dans les délais convenus, toujours.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">🔧</div>
-          <div class="why-card-title">SAV Garanti</div>
-          <p class="why-card-text">Service après-vente réactif. Garantie sur tous nos travaux. On reste disponibles après la pose.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-card-icon">💎</div>
-          <div class="why-card-title">Matériaux Premium</div>
-          <p class="why-card-text">Aluminium thermolaqué, double vitrage isolant, quincaillerie certifiée. Durabilité maximale.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process">
-    <div class="container">
-      <div class="process-header reveal">
-        <span class="section-label">Notre Méthode</span>
-        <h2 class="section-title">De l'Idée à la Pose</h2>
-        <p class="section-sub">Un processus simple, transparent, et pensé pour vous faciliter la vie.</p>
-      </div>
-      <div class="process-steps reveal">
-        <div class="process-step">
-          <div class="step-num">01</div>
-          <div class="step-title">Contact & Demande</div>
-          <p class="step-desc">Contactez-nous par WhatsApp ou formulaire. Décrivez votre projet en quelques mots.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">02</div>
-          <div class="step-title">Visite & Mesure</div>
-          <p class="step-desc">Notre technicien se déplace à Marrakech pour prendre les mesures et évaluer le chantier.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">03</div>
-          <div class="step-title">Devis Détaillé</div>
-          <p class="step-desc">Vous recevez un devis clair et complet sous 48h. Aucune surprise cachée.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">04</div>
-          <div class="step-title">Fabrication</div>
-          <p class="step-desc">Production sur mesure dans notre atelier avec des matériaux sélectionnés.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">05</div>
-          <div class="step-title">Pose & Livraison</div>
-          <p class="step-desc">Installation soignée par nos poseurs qualifiés. Nettoyage de chantier inclus.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section id="avis">
-    <div class="container">
-      <div class="reveal" style="text-align:center;margin-bottom:16px">
-        <span class="section-label">Avis Clients</span>
-        <h2 class="section-title">Ils Nous Font Confiance</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">Travail impeccable pour mes fenêtres et ma porte d'entrée. Délais respectés, équipe professionnelle et très propre. Je recommande vivement à tout Marrakech.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">K</div>
-            <div>
-              <div class="author-name">Karim B.</div>
-              <div class="author-city">Guéliz, Marrakech</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">Véranda magnifique, exactement ce que j'imaginais. Très bonne isolation malgré la chaleur. Le rapport qualité-prix est imbattable à Marrakech.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">S</div>
-            <div>
-              <div class="author-name">Sara M.</div>
-              <div class="author-city">Hivernage, Marrakech</div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">Garde-corps en aluminium et verre pour mon balcon — résultat superbe. Rapide, soigné, et l'équipe était disponible à chaque étape. Parfait.</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">Y</div>
-            <div>
-              <div class="author-name">Youssef A.</div>
-              <div class="author-city">Palmeraie, Marrakech</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA BAND -->
-  <div id="cta-band">
-    <div class="container">
-      <h2 class="cta-title">Votre Projet Commence Ici</h2>
-      <p class="cta-sub">Devis gratuit sous 48h. Contactez-nous maintenant sur WhatsApp et obtenez une réponse immédiate.</p>
-      <a href="https://wa.me/212600000000?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20des%20travaux%20en%20aluminium" target="_blank" class="whatsapp-btn">
-        <svg class="whatsapp-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Demander un Devis Gratuit
-      </a>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="reveal" style="margin-bottom:60px">
-        <span class="section-label">Contact</span>
-        <h2 class="section-title">Parlons de Votre Projet</h2>
-        <p class="section-sub">Remplissez le formulaire ou contactez-nous directement. Réponse garantie sous 24h.</p>
-      </div>
-      <div class="contact-wrapper">
-        <div class="contact-info reveal">
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
-            <div class="contact-detail">
-              <strong>Adresse</strong>
-              <span>Marrakech, Maroc<br>Intervention sur toute la ville</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📱</div>
-            <div class="contact-detail">
-              <strong>WhatsApp & Téléphone</strong>
-              <span>+212 6 00 00 00 00</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">📧</div>
-            <div class="contact-detail">
-              <strong>Email</strong>
-              <span>contact@aluminium-marrakech.ma</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">🕐</div>
-            <div class="contact-detail">
-              <strong>Horaires</strong>
-              <span>Lundi – Samedi : 8h – 18h<br>Dimanche : sur RDV</span>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form reveal">
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;margin-bottom:28px;font-weight:700;">Demande de Devis Gratuit</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Prénom & Nom</label>
-              <input type="text" placeholder="Mohamed Al Idrissi" />
-            </div>
-            <div class="form-group">
-              <label>Téléphone</label>
-              <input type="tel" placeholder="+212 6 XX XX XX XX" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Type de prestation</label>
-            <select>
-              <option value="">Choisissez une prestation...</option>
-              <option>Fenêtres Aluminium</option>
-              <option>Portes & Portails</option>
-              <option>Vérandas & Pergolas</option>
-              <option>Garde-Corps</option>
-              <option>Volets & Stores</option>
-              <option>Façades & Cloisons</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Description du projet</label>
-            <textarea placeholder="Décrivez votre projet (dimensions approximatives, matériaux souhaités, délai...)"></textarea>
-          </div>
-          <button class="form-submit" onclick="submitForm()">Envoyer la demande →</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- FOOTER COMPLET (Avec votre Logo) -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div style="display:flex;align-items:center;gap:12px">
-            <div class="nav-logo-icon" style="width:38px;height:38px;font-size:18px;">A</div>
-            <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;">AluPro <span style="color:var(--g5)">Marrakech</span></span>
-          </div>
-          <p>Spécialiste menuiserie aluminium et PVC à Marrakech. Qualité premium, pose professionnelle, garantie satisfaction.</p>
+          <a href="#" class="nav-logo" style="margin-bottom: 20px; display: inline-flex;">
+            <img src="logo-source.png" alt="Logo AluPro" style="width: 42px; height: 42px; border-radius: 12px; object-fit: contain; background: linear-gradient(135deg, var(--g4), var(--g5));">
+            <span class="nav-logo-text">Alu<span>Pro</span> Marrakech</span>
+          </a>
+          <p>Spécialiste en menuiserie aluminium et PVC à Marrakech. Votre partenaire de confiance pour des projets sur mesure.</p>
         </div>
         <div class="footer-col">
-          <h4>Services</h4>
+          <h4>Liens Rapides</h4>
           <ul>
-            <li><a href="#services">Fenêtres Aluminium</a></li>
-            <li><a href="#services">Portes & Portails</a></li>
-            <li><a href="#services">Vérandas</a></li>
-            <li><a href="#services">Garde-Corps</a></li>
-            <li><a href="#services">Volets & Stores</a></li>
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#pourquoi">Pourquoi Nous</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Zones</h4>
+          <h4>Légal</h4>
           <ul>
-            <li><a href="#">Guéliz</a></li>
-            <li><a href="#">Hivernage</a></li>
-            <li><a href="#">Palmeraie</a></li>
-            <li><a href="#">Médina</a></li>
-            <li><a href="#">Agdal</a></li>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">Politique de Confidentialité</a></li>
+            <li><a href="#">Conditions Générales</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+212600000000">+212 6 00 00 00 00</a></li>
-            <li><a href="https://wa.me/212600000000">WhatsApp Direct</a></li>
-            <li><a href="mailto:contact@aluminium-marrakech.ma">Email</a></li>
-            <li><a href="#">Devis Gratuit</a></li>
+            <li><a href="#">+212 600 000 000</a></li>
+            <li><a href="#">contact@alupro.ma</a></li>
+            <li><a href="#">Marrakech, Maroc</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2025 AluPro Marrakech — Tous droits réservés</span>
-        <div class="footer-socials">
-          <a href="#" class="social-link" title="Facebook">f</a>
-          <a href="#" class="social-link" title="Instagram">📸</a>
-          <a href="https://wa.me/212600000000" target="_blank" class="social-link" title="WhatsApp">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="color:#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </a>
-        </div>
+        <p>&copy; 2026 Aluminium Pro Marrakech. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
-
-  <!-- FLOATING WHATSAPP -->
-  <a href="https://wa.me/212600000000?text=Bonjour%2C%20je%20souhaite%20un%20devis%20aluminium%20%C3%A0%20Marrakech" target="_blank" class="floating-wa" title="Contactez-nous sur WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <script>
-    // ─── SCROLL REVEAL ───
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // ─── NAV SCROLL ───
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      if (window.scrollY > 60) {
-        nav.style.background = 'rgba(8,25,15,0.95)';
-        nav.style.padding = '10px 40px';
-      } else {
-        nav.style.background = 'rgba(13,43,26,0.6)';
-        nav.style.padding = '16px 40px';
-      }
-    });
-
-    // ─── MOBILE MENU ───
-    function toggleMenu() {
-      const menu = document.getElementById('mobile-menu');
-      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-    }
-
-    // ─── FORM SUBMIT ───
-    function submitForm() {
-      alert('Merci pour votre demande ! Nous vous contacterons dans les 24 heures.');
-    }
-
-    // ─── COUNTER ANIMATION ───
-    function animateCounters() {
-      document.querySelectorAll('.stat-num').forEach(el => {
-        const text = el.textContent;
-        const num = parseInt(text.replace(/\D/g, ''));
-        if (!num) return;
-        const prefix = text.match(/^[+]/) ? '+' : '';
-        const suffix = text.replace(/[0-9+]/g, '');
-        let current = 0;
-        const step = num / 50;
-        const timer = setInterval(() => {
-          current = Math.min(current + step, num);
-          el.textContent = prefix + Math.round(current) + suffix;
-          if (current >= num) clearInterval(timer);
-        }, 30);
-      });
-    }
-
-    const heroObserver = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) { animateCounters(); heroObserver.disconnect(); }
-    }, { threshold: 0.5 });
-    heroObserver.observe(document.querySelector('.hero-stats'));
-  </script>
 
 </body>
 </html>

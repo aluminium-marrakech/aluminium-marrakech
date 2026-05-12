@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO TITLE -->
+  <title>Aluminium Marrakech | Fenêtres, Portes & Rideaux Électriques Installation & Réparation</title>
+
+  <!-- META SEO -->
+  <meta name="description" content="Entreprise d’aluminium à Marrakech. Installation et réparation de fenêtres, portes et rideaux électriques. Service rapide, professionnel et prix compétitifs." />
+  <meta name="keywords" content="aluminium Marrakech, fenêtres aluminium Marrakech, portes aluminium Maroc, rideaux électriques Marrakech, installation aluminium Marrakech, réparation aluminium" />
+  <meta name="author" content="Aluminium Marrakech" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- OPEN GRAPH (Facebook / WhatsApp SEO) -->
+  <meta property="og:title" content="Aluminium Marrakech - Installation & Réparation" />
+  <meta property="og:description" content="Fenêtres, portes et rideaux électriques à Marrakech. Service rapide et professionnel." />
+  <meta property="og:type" content="website" />
+
+  <!-- STRUCTURED DATA (Google SEO boost) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aluminium Marrakech",
+    "image": "https://via.placeholder.com/600x400",
+    "telephone": "+212694507436",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "description": "Installation et réparation aluminium à Marrakech : fenêtres, portes et rideaux électriques.",
+    "url": "https://aluminium-marrakech.github.io"
+  }
+  </script>
+
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; background:#f5f5f5; color:#333;}
+    header {background:#111; color:#fff; padding:40px 20px; text-align:center;}
+    header h1 {margin:0; font-size:30px;}
+    .container {max-width:1000px; margin:auto; padding:20px;}
+
+    .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
+    .card {background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.1); text-align:center;}
+    .card img {width:100%; border-radius:10px;}
+
+    .whatsapp {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      color:#fff;
+      padding:15px 20px;
+      border-radius:50px;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    footer {text-align:center; padding:20px; background:#111; color:#fff; margin-top:30px;}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Aluminium Marrakech</h1>
+  <p>Fenêtres • Portes • Rideaux Électriques</p>
+</header>
+
+<div class="container">
+
+  <h2>Nos Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Fenêtres aluminium Marrakech" />
+      <h3>Fenêtres Aluminium</h3>
+      <p>Installation et réparation professionnelle à Marrakech.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Portes aluminium Maroc" />
+      <h3>Portes Aluminium</h3>
+      <p>Sécurité et design moderne pour votre maison.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x250" alt="Rideaux électriques Marrakech" />
+      <h3>Rideaux Électriques</h3>
+      <p>Automatisation et installation rapide et fiable.</p>
+    </div>
+  </div>
+
+  <h2>Pourquoi nous choisir ?</h2>
+  <ul>
+    <li>✔ Service rapide à Marrakech</li>
+    <li>✔ Prix compétitifs</li>
+    <li>✔ Travail professionnel garanti</li>
+    <li>✔ Intervention à domicile</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>📞 0694507436</p>
+  <p>📍 Marrakech, Maroc</p>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/212694507436" target="_blank">
+  WhatsApp
+</a>
+
+<footer>
+  <p>© 2026 Aluminium Marrakech - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
